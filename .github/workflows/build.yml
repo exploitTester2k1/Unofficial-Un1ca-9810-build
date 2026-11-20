@@ -33,9 +33,9 @@ jobs:
           sudo docker builder prune -a
 
       - name: Free disk space (2/3)
-        uses: jlumbroso/free-disk-space@main
+        uses: jlumbroso/free-disk-space@v1.3.1
         with:
-          tool-cache: true
+          preinstalled-runtimes: true
 
       - name: Free disk space (3/3)
         uses: rokibhasansagar/slimhub_actions@main
